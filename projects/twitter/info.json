@@ -1,0 +1,6 @@
+{
+    "name": "Twitter Updates",
+    "description":
+        "News Ticker that displays the latest tweets from Kew Gardens.",
+    "className": "twitter"
+}

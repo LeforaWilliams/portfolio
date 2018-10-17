@@ -1,0 +1,7 @@
+{
+    "name": "Visionboard",
+    "description":
+        "An imageboard that allows the user to upload images and recieve comments from others. ",
+    "technologies": "Vue.js, Node.js, PostgreSQL, HTML/CSS",
+    "id": "imageboard"
+}

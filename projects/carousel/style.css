@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+h1 {
+    position: fixed;
+    color: white;
+    font-size: 33px;
+    left: 50px;
+    top: 20px;
+    z-index: 1; /*why did I have to add this*/
+}
+
+#carousel {
+    position: relative;
+    display: flex;
+    height: 600px;
+    overflow: hidden;
+}
+
+.kitty {
+    position: absolute; /* use this so they can use the same x and y space*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0s;
+}
+
+.kitty.onscreen {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.kitty.exit {
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.kitty img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#dot-container {
+    position: absolute; /* will only be as wide as its content*/
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.headings {
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    left: 50px;
+    bottom: 168px;
+}
+
+/*  Media Queries*/
+
+@media (max-width: 720px) {
+    #carousel {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 720px and orientation: landscape) {
+    #carousel {
+        height: 100vh;
+    }
+}

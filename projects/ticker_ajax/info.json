@@ -1,0 +1,57 @@
+{
+    "name": "News Ticker",
+    "description": "News Ticker for website.",
+    "className": "ticker",
+    "tickerLinks": [
+        {
+            "text": "I don't git it.",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "Take me to the lakes",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "We are plant parents",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "She is wearing stripes",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "Some People Have Time",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "I love this show",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "Another show I love",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "This is very funny",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "I've watched a lot of TV in my life",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        },
+        {
+            "text": "This is cool. I promise",
+            "href":
+                "http://iulianacosmina.com/wp-content/uploads/2017/01/git_fire.png"
+        }
+    ]
+}

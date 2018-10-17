@@ -1,0 +1,168 @@
+body {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.blue-back {
+    background-color: blue;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#name {
+    position: fixed;
+    left: 1%;
+    top: 1%;
+    font-size: 1.5rem;
+    z-index: 16;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover {
+    color: black;
+    background: rgba(255, 235, 59, 0.55);
+    text-shadow: -3px -2px #ffa9a9;
+}
+
+#contact {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    font-weight: 700;
+}
+
+.projects-nav {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+.pojects-nav {
+}
+
+/* ######Description Page####### */
+.project-image img {
+    /* object-fit: contain;  */
+    width: 106%;
+    box-shadow: -4px 17px 20px 0px #eaeaea;
+    position: relative;
+    top: 5rem;
+    height: 450px;
+    right: 10%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.project-description {
+    text-align: left;
+
+    position: relative;
+    top: 3rem;
+    left: 2%;
+}
+
+.project-description h3 {
+    font-size: 4rem;
+    width: 20%;
+}
+
+.project-description p {
+    width: 70%;
+}
+
+section div {
+    width: 50%;
+}
+
+/* #########Navigation######### */
+
+div.project-name a {
+    color: black;
+    display: inline;
+    text-decoration: none;
+    transition: font-size 0.5s ease;
+    padding-right: 10px;
+    line-height: 1.8;
+}
+
+div.project-name a:hover {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.project-prev {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 700px;
+    height: 350px;
+}
+
+.overview-page {
+}
+.nav-unit {
+    display: inline-block;
+}
+
+/* ######HOME#######   */
+
+.main-home-content {
+    margin-top: 15%;
+}
+
+#tag {
+    font-size: 2rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.stack {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stack img {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+img.me {
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.places-lived p {
+    position: absolute;
+    right: 25%;
+    width: 16%;
+}
+
+.hidden {
+    display: none;
+}

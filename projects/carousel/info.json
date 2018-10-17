@@ -1,0 +1,7 @@
+{
+    "name": "Carousel",
+    "description":
+        "Although controversial, carousels are still widely used on many websites (I actually like them #uo). Every 5 seconds the carousel rotates and shows a new image and headline. Alternatively, the buttons can be used for navigation.",
+    "technologies": "Technologies: JavaScript, HTML/CSS.",
+    "className": "carousel"
+}

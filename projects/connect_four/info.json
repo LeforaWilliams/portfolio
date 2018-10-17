@@ -1,0 +1,7 @@
+{
+    "name": "Connect Four",
+    "description":
+        "Rebuild of the classic cult game 'connect four' for two players.",
+    "technologies": "JavaScript, HTML/CSS",
+    "className": "connect"
+}

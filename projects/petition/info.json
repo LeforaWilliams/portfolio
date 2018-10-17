@@ -1,0 +1,7 @@
+{
+    "name": "Ethical Fashion Petition",
+    "description":
+        "This online petition is for people that want to see a change in the fashion industry. They are able to register and log in, sign the petition and connect to other signers in their ctiy.",
+    "technologies": "Handlebars, Node.js, PostgreSQL, HTML/CSS",
+    "id": "petition"
+}

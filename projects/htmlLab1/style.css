@@ -1,0 +1,222 @@
+* {
+    font-family: Georiga;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* to remove the gap on the side of the browser */
+}
+
+/* Header Styling*/
+header {
+    position: relative;
+    padding: 1%;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    padding-right: 1.5%;
+}
+
+/* Header Styling End */
+
+/* Hero Div Styling */
+section#hero {
+    position: relative;
+    width: 100%;
+    /* height: 600px;  No height so the image will keep it's original height*/
+}
+
+#hero img {
+    filter: brightness(75%);
+    width: 100%;
+    vertical-align: bottom; /* closes the gap of the element which is reserved for characters such as g and y. By closing it the image will seamlessly flow into the next element */
+}
+
+img.cute {
+    /*  CSS Transition*/
+    transform: translateX(500px);
+    /* left: 200px; */
+    transition-property: transform; // can add most css property which you want to change
+    transition-duration: 0.5s;
+}
+
+#hero-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+button {
+    background-color: #ffcc33;
+    border: #cc6600 solid 4px;
+    border-radius: 40px;
+    /* height: 50px;
+    width: 200px; choose to go with padding to set the size of the button instead */
+    padding: 0.5% 5%;
+    color: #cc6600;
+    font-size: 1.5rem;
+}
+
+#hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+/* Hero Div Styling End */
+
+.details-background {
+    background-color: #cccccc;
+    position: relative;
+    width: 100%;
+    padding: 6% 6% 6% 13%;
+    margin-bottom: 0;
+}
+
+.details {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 100px;
+    vertical-align: top;
+}
+
+.icon {
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.details p {
+    margin-top: 5px;
+    margin-bottom: 33px;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #666666;
+    padding: 0.5% 2%;
+    color: white;
+}
+
+/* Menu Styling */
+div.hamburgermenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(1000%);
+    /* use this for the animation and delete display */
+    /* display: none; */
+}
+
+.menu-on div.hamburgermenu,
+.modal-on .modal-container {
+    display: block;
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+div.white-menu-part {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translateX(100%); */
+    background-color: white;
+    width: 300px;
+    height: 100%;
+}
+
+#exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.hamburgermenu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hamburgermenu .menu-links {
+    margin-top: 65px;
+}
+
+/*  1 second pop styling*/
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(1000%);
+}
+
+.modal {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background-color: white;
+    height: 350px;
+    width: 550px;
+    border-radius: 10%;
+    padding: 5% 5%;
+}
+
+.modal h2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal p {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 51px;
+    top: 39px;
+    text-decoration: none;
+    font-size: 1.6em;
+    color: black;
+}
+
+/*  Media Queries*/
+
+@media (max-width: 768px) {
+    .details {
+        display: block;
+        width: 100%;
+    }
+}
