@@ -1,10 +1,8 @@
 const express = require("express");
 const app = express();
 const ca = require("chalk-animation");
-const basicAuth = require("basic-auth");
 const hb = require("express-handlebars");
 const fs = require("fs");
-app.use(require("cookie-parser")());
 app.use(
     require("body-parser").urlencoded({
         extended: false
@@ -13,6 +11,9 @@ app.use(
 
 app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
+
+app.use(express.static("./projects"));
+app.use(express.static("./style"));
 
 //**** TEMPLATES WITH EXPRESS HANDLEBARS
 let folders = fs.readdirSync(__dirname + "/projects"); //turn this into an array of objects and add the json file information into it
