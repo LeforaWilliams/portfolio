@@ -56,18 +56,16 @@ app.get("/projects/:projectName/description", function(req, res) {
     //loop that compares the name variable to the array of objects to see if the file exists
     const name = req.params.projectName;
     const image = "/" + req.params.projectName + "/screenshot.png";
-    let fullProj = "/" + name;
+    let fullProj;
 
     if (name == "socialnetwork") {
         fullProj = "https://people-network.herokuapp.com/";
-    }
-
-    if (name == "petition") {
+    } else if (name == "1petition") {
         fullProj = "https://ethical-fashion-petition.herokuapp.com/";
-    }
-
-    if (name == "imageboard") {
+    } else if (name == "imageboard") {
         //to come :))
+    } else {
+        fullProj = "/" + name;
     }
 
     if (folders.includes(name)) {
