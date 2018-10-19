@@ -147,4 +147,4 @@ app.get("/contact", (req, res) => {
     });
 });
 
-app.listen(process.env.PORT || 8080, () => ca.rainbow("Listening :DD"));
+app.listen(process.env.PORT || 8080, () => console.log("Listening :DD"));
