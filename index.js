@@ -10,59 +10,9 @@ app.use(
         extended: false
     })
 );
-var auth = function(req, res, next) {
-    var creds = basicAuth(req);
-    if (!creds || creds.name != "lefxwill" || creds.pass != "tresor2") {
-        res.setHeader(
-            "WWW-Authenticate",
-            'Basic realm="Enter your credentials to see this stuff."'
-        );
-        res.sendStatus(401);
-    } else {
-        next();
-    }
-};
+
 app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
-
-//*******Mideleware
-app.use((req, res, next) => {
-    if (!req.cookies.cookieAC && req.url !== "/cookie") {
-        res.cookie("url", req.url);
-        res.redirect("/cookie");
-    } else {
-        next();
-    }
-});
-
-//Creating a get request that will post a checkbox
-app.get("/cookie", (req, res) => {
-    res.send(
-        `
-            <h1>Please Accept Cookies to proceed</h1>
-            <form method = "POST" action = '/cookie'>
-                <input name = 'checkbox'  type='checkbox'> I accept the cookies
-                <button type = 'submit'>submit!</button>
-            </form>
-        `
-    );
-});
-
-app.post("/cookie", (req, res) => {
-    console.log("COOKIE RESPONSE:  ", req.body);
-    let cookieStatus = req.body.checkbox;
-    if (cookieStatus) {
-        res.cookie("cookieAC", 16);
-        res.redirect(req.cookies.url);
-    } else {
-        res.redirect("/cookie");
-    }
-});
-
-//****Basic Authentication
-app.use("/carousel", auth);
-app.use(express.static("./projects"));
-app.use(express.static("./style"));
 
 //**** TEMPLATES WITH EXPRESS HANDLEBARS
 let folders = fs.readdirSync(__dirname + "/projects"); //turn this into an array of objects and add the json file information into it
