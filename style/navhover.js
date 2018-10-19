@@ -6,6 +6,9 @@ var myPic = $("img.me");
 var picTxt = $("span.me");
 var places = $("div.places-lived");
 var placesTxt = $("span.places-lived");
+var close = $("p.close");
+var contactElem = $("section.contact-details");
+var contactHead = $("p#contact");
 
 //navigation links and divs to listen on
 var carouselDiv = $("div.carousel");
@@ -47,3 +50,11 @@ hoverToggle(sprintDiv, sprintImg);
 hoverToggle(tickerDiv, tickerImg);
 hoverToggle(petitionDiv, petitionImg);
 hoverToggle(imageboardDiv, imageboardImg);
+
+close.on("click", function(e) {
+    contactElem.addClass("hidden");
+});
+
+contactHead.on("click", function(e) {
+    contactElem.removeClass("hidden");
+});

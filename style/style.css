@@ -35,6 +35,7 @@ h1 a:hover {
     right: 1%;
     top: 1%;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .projects-nav {
@@ -165,4 +166,46 @@ img.me {
 
 .hidden {
     display: none;
+}
+
+/*######contact########  */
+.contact-details {
+    padding-top: 73px;
+    background: #ffe60e;
+    position: absolute;
+    height: 400px;
+    width: 950px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+
+.contact-intro {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.email {
+    margin-top: 115px;
+}
+
+.icon {
+    margin-top: 2%;
+    padding-right: 6%;
+}
+
+.bird {
+    height: 45px;
+    width: 45px;
+}
+
+.close {
+    position: fixed;
+    right: 4%;
+    top: 1%;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
 }

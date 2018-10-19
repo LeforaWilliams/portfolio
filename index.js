@@ -66,6 +66,7 @@ app.use(express.static("./style"));
 
 //**** TEMPLATES WITH EXPRESS HANDLEBARS
 let folders = fs.readdirSync(__dirname + "/projects"); //turn this into an array of objects and add the json file information into it
+
 let foldersObj = folders.map(folder => {
     const { name, description, className, technologies } = require(__dirname +
         "/projects/" +
@@ -139,11 +140,11 @@ app.get("/projects/:projectName/description", function(req, res) {
     });
 });
 
-//Contact page
+//Contact
 app.get("/contact", (req, res) => {
     res.render("contact", {
         layout: "main"
     });
 });
 
-app.listen(8080, () => ca.rainbow("Listening :DD"));
+app.listen(process.env.PORT || 8080, () => ca.rainbow("Listening :DD"));
