@@ -58,11 +58,12 @@ app.get("/projects/:projectName/description", function(req, res) {
     const image = "/" + req.params.projectName + "/screenshot.png";
     let fullProj;
 
-    if (name == "socialnetwork") {
+    if (name == "1socialnetwork") {
+        console.log("A");
         fullProj = "https://people-network.herokuapp.com/";
-    } else if (name == "1petition") {
+    } else if (name == "2petition") {
         fullProj = "https://ethical-fashion-petition.herokuapp.com/";
-    } else if (name == "imageboard") {
+    } else if (name == "3imageboard") {
         //to come :))
     } else {
         fullProj = "/" + name;

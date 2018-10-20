@@ -1,0 +1,7 @@
+{
+    "name": "PEOPLE Social Network",
+    "description":
+        "This social network is inspired by the PEOPLE festival organised by Michelberger Music. The idea is for attendends and artists to be able to connect and collaborate.",
+    "technologies": "React.js, Redux, PostgreSQL, Socket.io, HTML/CSS",
+    "className": "social"
+}

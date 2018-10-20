@@ -21,6 +21,8 @@ var tickerDiv = $("div.ticker");
 var tickerImg = $("img.ticker");
 var petitionDiv = $("div.petition");
 var petitionImg = $("img.petition");
+var socialDiv = $("div.social");
+var socialImg = $("img.social");
 var imageboardDiv = $("div.imageboard");
 var imageboardImg = $("img.imageboard");
 
@@ -50,6 +52,7 @@ hoverToggle(sprintDiv, sprintImg);
 hoverToggle(tickerDiv, tickerImg);
 hoverToggle(petitionDiv, petitionImg);
 hoverToggle(imageboardDiv, imageboardImg);
+hoverToggle(socialDiv, socialImg);
 
 close.on("click", function(e) {
     contactElem.addClass("hidden");
